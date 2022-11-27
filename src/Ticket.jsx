@@ -5,14 +5,18 @@ import "./Ticket.css";
 
 const Ticket = ({ route, navigation }) => {
   const location = useLocation();
-  useEffect(() => {
-    setTimeout(window.print(), 3000);
-  }, []);
 
   return (
     <div className="ticket">
-      <img className="" src={logo} alt="" />
-      <p className="name">{location.state.name}</p>
+      <img className="ticket-image" src={logo} alt="" />
+      <button
+        className="btn"
+        onClick={() => {
+          window.print();
+        }}
+      >
+        Print
+      </button>
     </div>
   );
 };
