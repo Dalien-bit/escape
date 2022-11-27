@@ -43,7 +43,11 @@ const Password = () => {
 
   return (
     <div className="password">
-      <img className="image fadeinout" src={logo} alt="" />
+      <img
+        className="image fadeinout"
+        src={`https://i.postimg.cc/4dSW8r1g/SAVE-20221127-153257.jpg`}
+        alt=""
+      />
       <article className="clock">
         <div className="seconds-container">
           <div className="seconds"></div>
@@ -67,7 +71,7 @@ const Password = () => {
             onClick={() => {
               console.log(answer);
               console.log(solution);
-              if (answer.toLowerCase() === solution) {
+              if (answer.toLowerCase().trim() === solution) {
                 navigate("/success");
               } else {
                 window.alert(hint);

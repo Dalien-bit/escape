@@ -1,14 +1,24 @@
 import React, { useState } from "react";
+import { saveAs } from "file-saver";
+import music from "./../assets/music.mp3";
 import "./Success.css";
-import logo from "./../assets/backdrop3.png";
-import { useNavigate } from "react-router-dom";
 
 const Success = () => {
   const [name, setName] = useState(null);
-  const navigate = useNavigate();
+  const downloadImage = () => {
+    saveAs("https://i.postimg.cc/FsGBCytr/initiate-1.png", "ticket.png"); // Put your image url here.
+  };
   return (
     <div className="success">
-      <img className="image fadeinout" src={logo} alt="" />
+      <audio autoPlay>
+        <source src={music} type="audio/mpeg" />
+      </audio>
+
+      <img
+        className="image fadeinout"
+        src={`https://i.postimg.cc/sXQLRjxX/SAVE-20221127-153303.jpg`}
+        alt=""
+      />
       <div className="pop">
         <div className="contain">
           <h1 className="question">Congrats you are invited to initiate!</h1>
@@ -21,12 +31,7 @@ const Success = () => {
             setName(e.target.value);
           }}
         />
-        <button
-          className="bttn"
-          onClick={() => {
-            navigate("/ticket", { state: { name: name } });
-          }}
-        >
+        <button className="bttn" onClick={downloadImage}>
           Download Pass
         </button>
       </div>

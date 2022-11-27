@@ -1,20 +1,16 @@
 import logo from "./assets/initiate.png";
-import React, { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import React from "react";
 import "./Ticket.css";
+import { saveAs } from "file-saver";
 
 const Ticket = ({ route, navigation }) => {
-  const location = useLocation();
-
+  const downloadImage = () => {
+    saveAs("https://i.postimg.cc/FsGBCytr/initiate-1.png", "ticket.png"); // Put your image url here.
+  };
   return (
     <div className="ticket">
       <img className="ticket-image" src={logo} alt="" />
-      <button
-        className="btn"
-        onClick={() => {
-          window.print();
-        }}
-      >
+      <button className="btn" onClick={downloadImage}>
         Print
       </button>
     </div>
