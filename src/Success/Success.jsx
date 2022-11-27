@@ -4,7 +4,7 @@ import music from "./../assets/music.mp3";
 import "./Success.css";
 
 const Success = () => {
-  const [name, setName] = useState(null);
+  const [, setName] = useState(null);
   const downloadImage = () => {
     saveAs("https://i.postimg.cc/FsGBCytr/initiate-1.png", "ticket.png"); // Put your image url here.
   };

@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Password.css";
 
-import logo from "./assets/hints.png";
-
 const questions = [
   {
     question: "If Apple made a car, what would it be missing?",
