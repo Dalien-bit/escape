@@ -16,7 +16,7 @@ const Success = () => {
 
       <img
         className="image fadeinout"
-        src={`https://i.postimg.cc/sXQLRjxX/SAVE-20221127-153303.jpg`}
+        src={`https://i.postimg.cc/j5yz4kv8/SAVE-20221127-162126.jpg`}
         alt=""
       />
       <div className="pop">

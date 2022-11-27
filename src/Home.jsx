@@ -15,7 +15,7 @@ const Home = () => {
 
   return (
     <div className="App">
-      <audio autoPlay>
+      <audio autoPlay loop>
         <source src={music} type="audio/mpeg" />
       </audio>
       <img className="image" src={hero} alt="" />
