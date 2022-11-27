@@ -2,7 +2,7 @@ import "./Home.css";
 import { useNavigate } from "react-router-dom";
 import hero from "./assets/blue.jpeg";
 import { useState, useEffect } from "react";
-import sound from "./assets/music.mp3";
+import music from "./assets/musicf.mp3";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -16,7 +16,7 @@ const Home = () => {
   return (
     <div className="App">
       <audio autoPlay>
-        <source src={sound} type="audio/mpeg" />
+        <source src={music} type="audio/mpeg" />
       </audio>
       <img className="image" src={hero} alt="" />
       <h1 className="heading">Let's INITIATE...</h1>
