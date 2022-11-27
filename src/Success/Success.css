@@ -1,0 +1,36 @@
+.success {
+    text-align: center;
+    height: 100vh;
+    background-color: #003452;
+    /* background-image: url("../assets/block.png"); */
+}
+
+.pop {
+    margin: auto;
+    text-align: center;
+    z-index: 5;
+    position: absolute;
+    top: 190px;
+    left: 10px;
+}
+
+.contain {
+    color: white;
+    padding: 2px;
+    font-family: 'Signika Negative', sans-serif;
+    margin: auto;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.583);
+    width: 265px;
+    border-radius: 10px;
+    border: 1px;
+    transform: rotate(0deg);
+}
+
+.inp {
+    display: flex;
+    text-align: center;
+    margin: 30px auto;
+    height: 30px;
+    width: 150px;
+}

@@ -1,0 +1,9 @@
+.ticket {
+    /* background-image: url('./assets/ticket.jpeg'); */
+    height: 100vh;
+    text-align: center;
+}
+
+.name {
+    display: flex;
+}

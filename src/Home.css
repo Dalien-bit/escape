@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.App {
+  text-align: center;
+  height: 100vh;
+  justify-items: center;
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.heading {
+  position: relative;
+  top: 100px;
+  color: white;
+  font-family: 'Patrick Hand', cursive;
+  /* font-family: 'Quattrocento Sans', sans-serif; */
+  /* font-family: 'Signika Negative', sans-serif; */
+}
+
+
+
+.bttn {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  z-index: 5;
+
+  position: relative;
+  top: 70%;
+}
+
+.bttn:hover {
+  cursor: pointer;
+}
+
+
+/* Loading animation */
+
+
+.center {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+}
+
+.wave {
+  width: 5px;
+  height: 100px;
+  background: linear-gradient(45deg, cyan, #fff);
+  margin: 10px;
+  animation: wave 1s linear infinite;
+  border-radius: 20px;
+}
+
+.wave:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.wave:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.wave:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+.wave:nth-child(5) {
+  animation-delay: 0.4s;
+}
+
+.wave:nth-child(6) {
+  animation-delay: 0.5s;
+}
+
+.wave:nth-child(7) {
+  animation-delay: 0.6s;
+}
+
+.wave:nth-child(8) {
+  animation-delay: 0.7s;
+}
+
+.wave:nth-child(9) {
+  animation-delay: 0.8s;
+}
+
+.wave:nth-child(10) {
+  animation-delay: 0.9s;
+}
+
+@keyframes wave {
+  0% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0);
+  }
+}
+
+
+/* Progress Bar */
+
+.progress {
+  position: relative;
+  height: 10px;
+  width: 40%;
+  margin: auto;
+  border: 5px solid black;
+  top: 60%;
+}
+
+.progress .color {
+  position: absolute;
+  background-color: rgb(209, 209, 255);
+  width: 0px;
+  height: 10px;
+  animation: progres 4s forwards linear;
+}
+
+@keyframes progres {
+  0% {
+    width: 0%;
+  }
+
+  25% {
+    width: 50%;
+  }
+
+  50% {
+    width: 75%;
+  }
+
+  75% {
+    width: 85%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
